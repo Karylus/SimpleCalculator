@@ -56,7 +56,7 @@ namespace calculator
 
             try
             {
-                resultado = Convert.ToDouble(new DataTable().Compute(operacion, null));
+                resultado = Convert.ToDouble(new DataTable().Compute(operacion, null)); //Usa una DataTable para hacer los calculos
 
                 textBox1.Clear();
 
@@ -72,7 +72,7 @@ namespace calculator
 
             string completo = operacion + " = " + resultado;
 
-            string[] columna = { completo };
+            string[] columna = { completo }; //Creo un array que es igual a una fila de la listView
 
             var listViewItem = new ListViewItem(columna);
 
@@ -138,7 +138,7 @@ namespace calculator
         {
             try
             {
-                if (textBox1.Text[0].Equals('-'))
+                if (textBox1.Text[0].Equals('-')) //Si el primer char es '-' lo cambia por '+'
                 {
                     string text = textBox1.Text.Replace('-', '+');
 
@@ -149,7 +149,7 @@ namespace calculator
 
                 else
                 {
-                    Decimal text = Decimal.Negate(Convert.ToDecimal(textBox1.Text));
+                    Decimal text = Decimal.Negate(Convert.ToDecimal(textBox1.Text)); //Niega el '+' o el ' ' en el primer char por '-'
 
                     textBox1.Clear();
 

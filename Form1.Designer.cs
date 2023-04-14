@@ -425,7 +425,7 @@
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(212)))), ((int)(((byte)(231)))));
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -493,4 +493,3 @@
         private System.Windows.Forms.Button buttonAddition;
     }
 }
-
